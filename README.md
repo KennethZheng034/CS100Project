@@ -4,11 +4,28 @@
 # \<Project title\>
  > Your author list below should include links to all members GitHub (remove existing author).
  
- > Authors: \<[Jeffrey McDaniel](https://github.com/jmcda001)\>
+ > Authors: \<[Hannah Hwang](https://github.com/hhannahhwang) [Andres Lopez](https://github.com/AndresAtUCR) [Haokun Yang](github.com/HaokunYang123) [Kenneth Zheng](github.com/KennethZheng034)\>
 
  > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list and start thinking about the features you will implement. If you want to propose your own original idea, you will have to contact your instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings.
 
  > ## Expectations
+ Our project is a text-based role-playing game (RPG) where the player is a UCR student with multiple tasks, academic and non-academic, with the ultimate goal of successfully graduating with their chosen degree. We wanted to create a game that reflects the experiences of college life at UCR. By allowing players to customize their character based on their major/year, we anticipate the game to be a personalized experience for each player and hopefully a "comfort" game where they can just have fun and time to time make not-so-wonderful choices which would bare consequences in real life, but not in this virtual realm. For the development of our project, we plan to use C++ and VScode as our editor. 
+
+ When playing our game, the player will be prompted to input their major, year, quarter, GPA, and personality type during the initial character formulation stage. 
+
+ * Major : string
+ * Year : integer
+ * Quarter : string
+ * GPA : double
+ * Personality Type : string
+
+ Then the game will formulate a story based on the initial setting and prompt the player to make decisions along the way until they "graduate" within the game. The player's choices will influence the output of the characters health, GPA, and degree process -- the consequences/benefits of each choice will be reflected upon the character after each additional input.  
+
+ If it is also possible, we hope to implement a progress saving feature by writing the player's input into a file that auto saves so when they return to the game they can pick up from where they left off. 
+
+  
+
+
  > * The backend of your project should be implemented in C++. If you wish to choose anoher programming language (e.g. Java, Python), please discuss with your lab TA to obtain permission.
  > * You can incorporate additional technologies/tools but they must be approved (in writing) by the instructor or the TA.
  > * Each member of the group **must** be committing code regularly and make sure their code is correctly attributed to them. We will be checking attributions to determine if there was equal contribution to the project.
