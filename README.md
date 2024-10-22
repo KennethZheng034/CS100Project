@@ -3,7 +3,7 @@
  > Authors: \<[Hannah Hwang](https://github.com/hhannahhwang) [Andres Lopez](https://github.com/AndresAtUCR) [Haokun Yang](github.com/HaokunYang123) [Kenneth Zheng](github.com/KennethZheng034)\>
 
 ## Project Description
- Our project is a text-based role-playing game (RPG) where the player is a UCR student with multiple tasks, academic and non-academic, with the ultimate goal of successfully graduating with their chosen degree. We wanted to create a game that reflects the experiences of college life at UCR. By allowing players to customize their character based on their major/year, we anticipate the game to be a personalized experience for each player and hopefully a "comfort" game where they can just have fun and time to time make not-so-wonderful choices which would bare consequences in real life, but not in this virtual realm. For the development of our project, we plan to use C++ and VScode as our editor. 
+ Our project is a text-based role-playing game (RPG) where the player is a UCR student with multiple tasks, academic and non-academic, with the ultimate goal of successfully graduating with their chosen degree. As UCR students ourselves and due to our interest in game development, we wanted to create a game that reflects upon the college life here at UCR. By allowing players to customize their character based on their major/year, we anticipate the game to be a personalized experience for each player and hopefully a "comfort" game where they can have fun and time to time make not-so-wonderful choices which would bare consequences in real life, but less so in this virtual realm. Additionally, we hope this game could be helpful to incoming students who may struggle with navigating college life, often experiencing imposter syndrome, as a guiding resource in addition to it being a source of entertainment. For the development of our project, we plan to use C++ and VScode as our editor. 
 
  When playing our game, the player will be prompted to input their major, year, quarter, GPA, and personality type during the initial character formulation stage. 
 
@@ -13,9 +13,7 @@
  * GPA : double
  * Personality Type : string
 
- Then the game will formulate a story based on the initial setting and prompt the player to make decisions along the way until they "graduate" within the game. The player's choices will influence the output of the characters health, GPA, and degree process -- the consequences/benefits of each choice will be reflected upon the character after each additional input.  
-
- If it is also possible, we hope to implement a progress saving feature by writing the player's input into a file that auto saves so when they return to the game they can pick up from where they left off. 
+ Then the game will formulate a story based on the initial setting and prompt the player to make decisions along the way until they "graduate" within the game. The player's choices throughout the game will influence the output of the character's health, GPA, and degree process -- the consequences/benefits of each additional player input will be reflected upon the character. We envision the outputs to be an increase/decrease in stat, subsequent events following the player's input, and dialogue as necessary. All aspects of the game will be implemented in the terminal. If it is also possible, we hope to implement a progress saving feature by writing the player's input into a file that auto saves so the player can pick up from where they left off upon returning to the game. 
 
  > ## Phase II
  > In addition to completing the "User Interface Specification" and "Class Diagram" sections below, you will need to:
