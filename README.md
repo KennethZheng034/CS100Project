@@ -1,6 +1,6 @@
 # life@UCR
  
- > Authors: \<[Hannah Hwang](https://github.com/hhannahhwang) [Andres Lopez](https://github.com/AndresAtUCR) [Haokun Yang](github.com/HaokunYang123) [Kenneth Zheng](github.com/KennethZheng034)\>
+ > Authors: \<[Hannah Hwang](https://github.com/hhannahhwang), [Andres Lopez](https://github.com/AndresAtUCR), [Haokun Yang](github.com/HaokunYang123), [Kenneth Zheng](github.com/KennethZheng034)\>
 
 ## Project Description
  Our project is a text-based role-playing game (RPG) where the player is a UCR student with multiple tasks, academic and non-academic, with the ultimate goal of successfully graduating with their chosen degree. As UCR students ourselves and due to our interest in game development, we wanted to create a game that reflects upon the college life here at UCR. By allowing players to customize their character based on their major/year, we anticipate the game to be a personalized experience for each player and hopefully a "comfort" game where they can have fun and time to time make not-so-wonderful choices which would bare consequences in real life, but less so in this virtual realm. Additionally, we hope this game could be helpful to incoming students who may struggle with navigating college life, often experiencing imposter syndrome, as a guiding resource in addition to it being a source of entertainment. For the development of our project, we plan to use C++ and VScode as our editor. 
