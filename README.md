@@ -16,9 +16,9 @@
  Then the game will formulate a story based on the initial setting and prompt the player to make decisions along the way until they "graduate" within the game. The player's choices throughout the game will influence the output of the character's health, GPA, and degree process -- the consequences/benefits of each additional player input will be reflected upon the character. We envision the outputs to be an increase/decrease in stat, subsequent events following the player's input, and dialogue as necessary. All aspects of the game will be implemented in the terminal. If it is also possible, we hope to implement a progress saving feature by writing the player's input into a file that auto saves so the player can pick up from where they left off upon returning to the game. 
 
 ## Navigation Diagram
-> Our **Navigation Diagram** is down below:
+ Our **Navigation Diagram** is down below:
 ![alt text](<Navigation Diagram Life@UCR - CSNotGetting100.png>)
-> This user **Navigation Diagram** provides a general consensus for what options will be prompted to the player during gameplay.
+ This user **Navigation Diagram** provides a general consensus for what options will be prompted to the player during gameplay.
 
 ## Class Diagram
 
@@ -43,6 +43,7 @@
 **Game Logic:** Provides structure for how the game functions as a whole and holds several major game mechanics.
 
 **GradRequirementChecker:** Class that functions as flags set in place to determine student graduation eligibility.
+
 
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
