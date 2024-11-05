@@ -38,7 +38,29 @@
 
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- 
+
+![UML Diagram Life@UCR - CSNotGetting100 (1)](https://github.com/user-attachments/assets/3084f0cb-d1fe-41f8-a9aa-50a289666cae)
+
+**Display:** The parent class of all display subclasses, is also a child class of game logic. It handles everything related to printing and displaying results/information to the terminal. All display features handeled in the terminal. 
+
+**Character Customization:** The child Display class handles displaying the player’s stats and characteristics.
+
+**User Choice:** This is a child class of Display, used to display choices users can select after a new event is prompted. 
+
+**OrientationDisplay** This is a child class of display that displays the questions asked by the orientation Q&A. It will display the available housing options as well as the housing the user ultimately chooses.
+
+**Student:** Creates a student object that sets, stores, and modifies all data about the character (major, gpa, name, year, quarter) and is the core class of the game relating to every other class either through composition or just relation. 
+
+**Orientation:** Class that initializes the questions utilized in the orientation feature and handles housing initialization. Will be printed through Orientation Display. 
+
+**Registration:** Takes in a vector of course objects from the courses class which is utilized for the player to pick and choose preferred classes. 
+
+**Courses:** Stores data of all classes in regards of courseID, location, TA, instructor, and additional variables related to class object. Database for Registration class. 
+
+**Game Logic:** Provides structure for how the game functions as a whole and holds several major game mechanics.
+
+**GradRequirementChecker:** Class that functions as flags set in place to determine student graduation eligibility.
+
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
  
