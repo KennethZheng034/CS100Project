@@ -17,7 +17,7 @@
 
 ## Navigation Diagram
  Our **Navigation Diagram** is down below:
-![alt text](<Navigation Diagram Life@UCR - CSNotGetting100.png>)
+![Navigation Diagram Life@UCR - CSNotGetting100](https://github.com/user-attachments/assets/24eafdaf-b278-4498-9db7-5ffa91bb55dd)
  This user **Navigation Diagram** provides a general consensus for what options will be prompted to the player during gameplay.
 
 ## Class Diagram
