@@ -16,12 +16,15 @@
  Then the game will formulate a story based on the initial setting and prompt the player to make decisions along the way until they "graduate" within the game. The player's choices throughout the game will influence the output of the character's health, GPA, and degree process -- the consequences/benefits of each additional player input will be reflected upon the character. We envision the outputs to be an increase/decrease in stat, subsequent events following the player's input, and dialogue as necessary. All aspects of the game will be implemented in the terminal. If it is also possible, we hope to implement a progress saving feature by writing the player's input into a file that auto saves so the player can pick up from where they left off upon returning to the game. 
 
 ## Navigation Diagram
+
  Our **Navigation Diagram** is down below:
 ![Navigation Diagram Life@UCR - CSNotGetting100](https://github.com/user-attachments/assets/24eafdaf-b278-4498-9db7-5ffa91bb55dd)
+
  This user **Navigation Diagram** provides a general consensus for what options will be prompted to the player during gameplay.
 
 ## Class Diagram
 
+Our **Class Diagram** is down below:
 ![UML Diagram Life@UCR - CSNotGetting100 (1)](https://github.com/user-attachments/assets/3084f0cb-d1fe-41f8-a9aa-50a289666cae)
 
 **Display:** The parent class of all display subclasses, is also a child class of game logic. It handles everything related to printing and displaying results/information to the terminal. All display features handeled in the terminal. 
@@ -30,7 +33,7 @@
 
 **User Choice:** This is a child class of Display, used to display choices users can select after a new event is prompted. 
 
-**OrientationDisplay** This is a child class of display that displays the questions asked by the orientation Q&A. It will display the available housing options as well as the housing the user ultimately chooses.
+**OrientationDisplay:** This is a child class of display that displays the questions asked by the orientation Q&A. It will display the available housing options as well as the housing the user ultimately chooses.
 
 **Student:** Creates a student object that sets, stores, and modifies all data about the character (major, gpa, name, year, quarter) and is the core class of the game relating to every other class either through composition or just relation. 
 
@@ -43,6 +46,11 @@
 **Game Logic:** Provides structure for how the game functions as a whole and holds several major game mechanics.
 
 **GradRequirementChecker:** Class that functions as flags set in place to determine student graduation eligibility.
+
+## Screen Layout
+Our **Screen Layout** is down below:
+
+![alt text](<Screen Layout Life@UCR - CSNotGetting100.png>)
 
 
  > ## Phase III
