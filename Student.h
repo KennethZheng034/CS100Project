@@ -13,7 +13,9 @@ protected:
     double studentGPA;
     int studentHealth;
     int studentSanity;
+    string studentGender;
     vector<string> studentSchedule;
+    string studentPersonality;
 
 public:
     Student();
@@ -26,7 +28,10 @@ public:
     void increaseSanity(int);
     void decreaseHealth(int);
     void decreaseGPA(double);
-    void decreaseSantiy(int);
+    void decreaseSanity(int);
     void setMajor(const string &);
     void setGPA(double);
+    void setGender(string);
+    void setPersonality(string);
+    string fetchPersonality(string);
 };

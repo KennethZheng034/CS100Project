@@ -10,6 +10,9 @@ Student::Student()
     double studentGPA = 0;
     int studentHealth = 100;
     int studentSanity = 0;
+    string studentName;
+    vector<string> studentSchedule;
+    string studentPersonality;
 }
 
 Student::~Student()
@@ -24,6 +27,15 @@ Student::Student(const string &Major, const string &Name, double GPA, int Health
     this->studentGPA = GPA;
     this->studentHealth = Health;
     this->studentSanity = 0;
+}
+
+const string &fetchProgress()
+{
+  return "yes";
+}
+const string &fetchYear()
+{
+  return;
 }
 
 void Student::setGPA(double GPA)
@@ -61,7 +73,31 @@ void Student::decreaseGPA(double amount)
     this->studentGPA -= amount;
 }
 
-void Student::decreaseSantiy(int amount)
+void Student::decreaseSanity(int amount)
 {
     this->studentSanity -= amount;
+}
+void Student::setMajor(const string& MajorInput)
+{
+    this->studentMajor = MajorInput;
+}
+
+void Student::setGPA(double GPAInput)
+{
+    this->studentGPA = GPAInput;
+}
+
+void Student::setGender(string GenderInput)
+{
+    this->studentGender = GenderInput;
+}
+
+void Student::setPersonality(string PersonalityInput)
+{
+    this->studentPersonality = PersonalityInput;
+}
+
+string Student::fetchPersonality(string)
+{
+   return this->studentPersonality;
 }
