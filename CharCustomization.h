@@ -1,11 +1,17 @@
 #include "Student.cpp"
+#include <iostream>
+#include <vector>
 
 class CharCustomization : Student
 {
     public:
-        void printMajor(Student);
-        void printGPA(Student);
-        void printHealth(Student);
-        void printSanity(Student);
-        void printName(Student);
+        void printStats();
+        void printMajor();
+        void printYear();
+        void printPersonality();
+        void printGender();
+        void printGPA();
+        void printHealth();
+        void printSanity();
+        void printName();
 };

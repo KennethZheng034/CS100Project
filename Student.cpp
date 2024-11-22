@@ -5,11 +5,11 @@ using namespace std;
 // constructor
 Student::Student()
 {
-    string studentMajor = "";
-    string studentName = "";
-    double studentGPA = 0;
-    int studentHealth = 100;
-    int studentSanity = 0;
+    this->studentMajor = "";
+    this->studentGPA = 0.0;
+    this->studentHealth = 100;
+    this->studentSanity = 0;
+    this->studentPersonality = "";
 }
 
 Student::~Student()
@@ -61,7 +61,7 @@ void Student::decreaseGPA(double amount)
     this->studentGPA -= amount;
 }
 
-void Student::decreaseSantiy(int amount)
+void Student::decreaseSanity(int amount)
 {
     this->studentSanity -= amount;
 }
