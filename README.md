@@ -22,9 +22,16 @@
 
  This user **Navigation Diagram** provides a general consensus for what options will be prompted to the player during gameplay.
 
+
+## Screen Layout
+Our **Screen Layout** is down below:
+
+![Screen Layout Life@UCR - CSNotGetting100](https://github.com/user-attachments/assets/b27df779-3c55-4d3f-811d-9eed7d2ccf21)
+
 ## Class Diagram
 
 Our **Class Diagram** is down below:
+
 ![UML Diagram Life@UCR - CSNotGetting100 (1)](https://github.com/user-attachments/assets/3084f0cb-d1fe-41f8-a9aa-50a289666cae)
 
 **Display:** The parent class of all display subclasses, is also a child class of game logic. It handles everything related to printing and displaying results/information to the terminal. All display features handeled in the terminal. 
@@ -47,33 +54,22 @@ Our **Class Diagram** is down below:
 
 **GradRequirementChecker:** Class that functions as flags set in place to determine student graduation eligibility.
 
-## Screen Layout
-Our **Screen Layout** is down below:
-
-![alt text](<Screen Layout Life@UCR - CSNotGetting100.png>)
-
-
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
- >   * For each update in your class diagram, you must explain in 3-4 sentences:
- >     * What SOLID principle(s) did you apply?
- >     * How did you apply it? i.e. describe the change.
- >     * How did this change help you write better code?
- > * Perform a new sprint plan like you did in Phase II.
- > * Make sure that your README file (and Project board) are up-to-date reflecting the current status of your project and the most recent class diagram. Previous versions of the README file should still be visible through your commit history.
->  * Each team member should also submit the Individual Contributions Form on Canvas for phase III. In this form, you need to fill in the names of all team members, the percentage of work contributed by each member for phase III, and a description of their contributions. Remember that each team member should submit the form individually.
- 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
 
+ **Updated UML Diagram**
+
+![UML Diagram Life@UCR - CSNotGetting100 (3)](https://github.com/user-attachments/assets/e0d41e11-64e4-44a6-ab97-26b7ee28367b)
+Update diagram to include additional display child classes and List variable in Student class to keep track of player's schedule.
+
+**S.O.L.I.D Principles**
+
+We did not make any major changes in terms of applying S.O.L.I.D principles because we thought our UML diagram did not have any violations. So the following text is how our diagram abides by 3 off the different principles as it was stated in the lab slides.
+
+* Single Responsibility Principle (SRP) : SRP states a class should be responsible for only one purpose. We have seperate classses that modifies/manages data and a display parent class what handles all console output. For a more specific example, the "Courses" class manages all data of a course such as ID, title, credit,... as well as setter methods and the "CourseInfo" class which is a child class of the "Display" class will output all the info related to a course when prompted.
+
+* Open-Closed Principle (OCP) : OCP states that software entities should be open for extension but closed for modification. Our implementation of the "Display" parent function to handle all console output and having multiple child classes for specific instances such as main menu output, orientation output, etc... illustrates OCP since we do not need to modify the display class at all, just need to *extend* as in create child classes.
+
+* Interface Segregation Principle (ISP) : ISP states that a client should never be forced to implement/use interfaces/methods that it doesn't need. We made sure in our diagram that each class doesn't contain any functions that it won't need to use.
  
  > ## Final deliverable
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
