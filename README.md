@@ -62,6 +62,7 @@ Our **Class Diagram** is down below:
 Update diagram to include additional display child classes and List variable in Student class to keep track of player's schedule.
 
 **S.O.L.I.D Principles**
+
 We did not make any major changes in terms of applying S.O.L.I.D principles because we thought our UML diagram did not have any violations. So the following text is how our diagram abides by 3 off the different principles as it was stated in the lab slides.
 
 * Single Responsibility Principle (SRP) : SRP states a class should be responsible for only one purpose. We have seperate classses that modifies/manages data and a display parent class what handles all console output. For a more specific example, the "Courses" class manages all data of a course such as ID, title, credit,... as well as setter methods and the "CourseInfo" class which is a child class of the "Display" class will output all the info related to a course when prompted.
