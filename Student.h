@@ -1,10 +1,7 @@
 #pragma once
-
 #include <iostream>
 #include <vector>
-
 using namespace std;
-
 class Student
 {
 protected:
@@ -13,10 +10,7 @@ protected:
     double studentGPA;
     int studentHealth;
     int studentSanity;
-    string studentGender;
     vector<string> studentSchedule;
-    string studentPersonality;
-
 public:
     Student();
     ~Student();
@@ -28,10 +22,7 @@ public:
     void increaseSanity(int);
     void decreaseHealth(int);
     void decreaseGPA(double);
-    void decreaseSanity(int);
+    void decreaseSantiy(int);
     void setMajor(const string &);
     void setGPA(double);
-    void setGender(string);
-    void setPersonality(string);
-    string fetchPersonality(string);
 };
