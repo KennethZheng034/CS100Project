@@ -69,7 +69,7 @@ We did not make any major changes in terms of applying S.O.L.I.D principles beca
 
 * Open-Closed Principle (OCP) : OCP states that software entities should be open for extension but closed for modification. Our implementation of the "Display" parent function to handle all console output and having multiple child classes for specific instances such as main menu output, orientation output, etc... illustrates OCP since we do not need to modify the display class at all, just need to *extend* as in create child classes.
 
-* Interface Segregation Principle (ISP) : ISP states that a client should never be forced to implement/use interfaces/methods that it doesn't need. We made sure in our diagram that each class doesn't contain any functions that it won't need to use.
+* Interface Segregation Principle (ISP) : ISP states that a client should never be forced to implement/use interfaces/methods that it doesn't need. We made sure in our diagram that each class doesn't contain any functions that it won't need to use. For example, the registration class handles only the things related to a student registering such as add/removing/recommending courses and doesn't include any functions or variables that are not applicable to registration.
  
  > ## Final deliverable
  > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
