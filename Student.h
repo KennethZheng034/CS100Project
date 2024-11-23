@@ -1,6 +1,5 @@
 #pragma once
 
-#include "CharCustomization.cpp"
 #include <iostream>
 #include <vector>
 #include <list>
@@ -18,24 +17,38 @@ class Student
         int studentHealth;
         int studentSanity;
         int studentYear;
-        list<string> studentSchedule;
+        vector<string> studentSchedule;
 
     public:
         Student();
         ~Student();
         Student(const string &, const string &, double, int, int);
         const string &fetchProgress();
-        int fetchYear();
         string fetchGender();
+        string fetchPersonality();
+        string fetchMajor();
         double fetchGPA();
         int fetchHealth();
         int fetchSanity();
-        string fetchPersonality();
-        string fetchMajor();
+        int fetchYear();
         void increaseGPA(double);
         void increaseHealth(int);
         void increaseSanity(int);
         void decreaseHealth(int);
         void decreaseGPA(double);
         void decreaseSanity(int);
+        void setGender(Student currStudent);
+        void setYear(Student currStudent);
+        void setMajor(Student currStudent);
+        void setGPA(Student currStudent);
+        void setPersonality(Student currStudent);
+        void printStats();
+        void printMajor();
+        void printYear();
+        void printPersonality();
+        void printGender();
+        void printGPA();
+        void printHealth();
+        void printSanity();
+        void printName();
 };
