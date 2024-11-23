@@ -14,4 +14,9 @@ class CharCustomization : Student
         void printHealth();
         void printSanity();
         void printName();
+        void setGender(Student );
+        void setPersonality(Student );
+        void setYear(Student );
+        void setMajor(Student );
+        void setGPA(Student );
 };

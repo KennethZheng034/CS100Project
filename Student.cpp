@@ -26,15 +26,6 @@ Student::Student(const string &Major, const string &Name, double GPA, int Health
     this->studentSanity = 0;
 }
 
-void Student::setGPA(double GPA)
-{
-    this->studentGPA = GPA;
-}
-
-void Student::setMajor(const string &Major)
-{
-    this->studentMajor = Major;
-}
 
 void Student::increaseGPA(double amount)
 {
@@ -60,8 +51,35 @@ void Student::decreaseGPA(double amount)
 {
     this->studentGPA -= amount;
 }
-
 void Student::decreaseSanity(int amount)
 {
     this->studentSanity -= amount;
+}
+int Student::fetchYear()
+{
+    return this->studentYear;
+}
+string Student::fetchGender()
+{
+    return this->studentGender;
+}
+double Student::fetchGPA()
+{
+    return this->studentGPA;
+}
+int Student::fetchHealth()
+{
+    return this->studentHealth;
+}
+int Student::fetchSanity()
+{
+    return this->studentSanity;
+}
+string Student::fetchPersonality()
+{
+    return this->studentPersonality;
+}
+string Student::fetchMajor()
+{
+    return this->studentMajor;
 }
