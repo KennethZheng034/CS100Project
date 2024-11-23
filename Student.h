@@ -1,10 +1,7 @@
 #pragma once
-
 #include <iostream>
 #include <vector>
-
 using namespace std;
-
 class Student
 {
 protected:
@@ -14,7 +11,6 @@ protected:
     int studentHealth;
     int studentSanity;
     vector<string> studentSchedule;
-
 public:
     Student();
     ~Student();
