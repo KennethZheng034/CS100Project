@@ -85,7 +85,7 @@ string Student::fetchMajor()
     return this->studentMajor;
 }
 
-void Student::setGender(Student currStudent)
+void Student::setGender()
 {
   string GenderInput;
   cout << "Are you a male or female?" << endl;
@@ -95,8 +95,9 @@ void Student::setGender(Student currStudent)
     cout << "invalid input, please try again" << endl;
     cin >> GenderInput;
   }
+  this->studentGender = GenderInput;
 }
-void Student::setPersonality(Student currStudent)
+void Student::setPersonality()
 {
   string userInput;
   string personalityType;
@@ -108,12 +109,37 @@ void Student::setPersonality(Student currStudent)
     {
       cout << "Please enter in your personality type" << endl;
       cin >> personalityType;
+      while(personalityType != "INTJ-A" || personalityType != "INTJ-T" || personalityType != "INTP-A" || personalityType != "INTP-T" 
+      || personalityType != "ENTJ-A" || personalityType != "ENTJ-T" || personalityType != "ENTP-A" || personalityType != "ENTP-T" 
+      || personalityType != "INFJ-A" || personalityType != "INFJ-T"  || personalityType != "INFP-A" || personalityType != "INFP-T"
+      || personalityType != "ENFJ-A" || personalityType != "ENFJ-T" || personalityType != "ENFP-A" || personalityType != "ENFP-T" 
+      || personalityType != "ISTJ-A" || personalityType != "ISTJ-T" || personalityType != "ISFJ-A" || personalityType != "ISFJ-T"
+      || personalityType != "ESTJ-A" || personalityType != "ESTJ-T" || personalityType != "ESFJ-A" || personalityType != "ESFJ-T"
+      || personalityType != "ISTP-A" || personalityType != "ISTP-T" || personalityType != "ISFP-A" || personalityType != "ISFP-T"
+      || personalityType != "ESTP-A" || personalityType != "ESTP-T" || personalityType != "ESFP-A" || personalityType != "ESFP-T")
+      {
+        cout << "Invalid personality type, please try again" << endl;
+        cin >> personalityType;
+      }
+      this->studentPersonality == personalityType;
     }
     else if(userInput == "no")
     {
       cout << "Please follow this link to find out your personality type: https://www.16personalities.com/free-personality-test" << endl;
       cout << "Once you've finished taking the test, please enter in your personality type: ";
       cin >> personalityType;
+      while(personalityType != "INTJ-A" || personalityType != "INTJ-T" || personalityType != "INTP-A" || personalityType != "INTP-T" 
+      || personalityType != "ENTJ-A" || personalityType != "ENTJ-T" || personalityType != "ENTP-A" || personalityType != "ENTP-T" 
+      || personalityType != "INFJ-A" || personalityType != "INFJ-T"  || personalityType != "INFP-A" || personalityType != "INFP-T"
+      || personalityType != "ENFJ-A" || personalityType != "ENFJ-T" || personalityType != "ENFP-A" || personalityType != "ENFP-T" 
+      || personalityType != "ISTJ-A" || personalityType != "ISTJ-T" || personalityType != "ISFJ-A" || personalityType != "ISFJ-T"
+      || personalityType != "ESTJ-A" || personalityType != "ESTJ-T" || personalityType != "ESFJ-A" || personalityType != "ESFJ-T"
+      || personalityType != "ISTP-A" || personalityType != "ISTP-T" || personalityType != "ISFP-A" || personalityType != "ISFP-T"
+      || personalityType != "ESTP-A" || personalityType != "ESTP-T" || personalityType != "ESFP-A" || personalityType != "ESFP-T")
+      {
+        cout << "Invalid personality type, please try again" << endl;
+        cin >> personalityType;
+      }
     }
     else
     {
@@ -122,29 +148,32 @@ void Student::setPersonality(Student currStudent)
     }
   }
 }
-void Student::setYear(Student currStudent)
+void Student::setYear()
 {
   int yearInput;
   cout << "Please enter in the year you would like to start at" << endl;
   cin >> yearInput;
-  if(yearInput >=1 && yearInput <= 4)
-  {
-    cout << "Your year is now set as " << yearInput;
-  }
-  else
+  while(yearInput < 1 || yearInput > 4)
   {
     cout << "Invalid year, please choose another" << endl;
     cin >> yearInput;
   }
+  cout << "Your year is now set as " << yearInput;
 }
 
-void Student::setMajor(Student currStudent)
+void Student::setMajor()
 {
   cout << "Your major is ____"; //WIP because class database is still being developed
 }
-void Student::setGPA(Student currStudent)
+void Student::setGPA()
 {
   double GPAInput;
+  if(this->fetchYear() == 1)
+  {
+    cout << "Your GPA has  been set to 0.0 since you're a first year" << endl;
+    this->studentYear = 0.0;
+    return;
+  }
   cout << "Please enter in the GPA you would like to start at" << endl;
   cin >> GPAInput;
   if(GPAInput >= 0.0 && GPAInput <= 4.0)
@@ -156,50 +185,4 @@ void Student::setGPA(Student currStudent)
     cout << "Invalid GPA, please choose another" << endl;
     cin >> GPAInput;
   }
-}
-
-void Student::printStats()
-{
-  cout << "Your current Major is " << this->studentMajor;
-  cout << "Your current GPA is" << this->studentGPA; 
-  cout << "Your current Health is" << this->studentHealth;
-  cout << "Your current sanity is " << this->studentSanity;
-  cout << "Your name is " << this->studentName;
-  cout << "Your current year is " << this->studentYear;
-}
-
-void Student::printMajor()
-{
-  cout << "Your current Major is " << this->studentMajor;
-}
-
-
-void Student::printYear()
-{
-  cout << "Your current Year is " << this->studentYear;
-}
-void Student::printPersonality()
-{
-  cout << "Your current Year is " << this->studentPersonality;
-}
-void Student::printGender()
-{
-  cout << "Your Gender is " << this->studentPersonality;
-}
-void Student::printGPA()
-{
-  cout << "Your personality is " << this->studentPersonality;
-}
-void Student::printHealth()
-{
-  cout << "Your current GPA is " << this->studentGPA;
-}
-
-void Student::printSanity()
-{
-  cout << "Your current sanity is " << this->studentSanity;
-}
-void Student::printName()
-{
-  cout << "Your name is " << this->studentName;
 }
