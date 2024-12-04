@@ -1,101 +1,276 @@
-Data Science Requirements
-FIRST YEAR
-CS010A - C++ Programming I (4 Credits)
-CS010B -  C++ Programming II (4 Credits)
-CS010C - Intro to Data Structures & Algorithms (4 Credits)
-MATH09A -  First Year Calculus (4 Credits)
-MATH09B -  First Year Calculus (4 Credits)
-MATH09C -  First Year Calculus (4 Credits)
-ENGL001A -  Beginning Composition (4 Credits)
-ENGL001B - Intermediate Composition (4 Credits)
-SOC1 - Intro to Sociology (4 Credits)
-PSYC1 - Intro to Psychology (4 Credits)
-CHEM1A - General Chemistry (5 Credits)
-SECOND YEAR
-CS100 - Software Construction (5 Credits)
-CS011 - Intro to Discrete Structures (4 Credits)
-CS105 - Data Analysis Methods  (4 Credits)
-CS111 - Discrete Structures (4 Credits)
-MATH031 -  Applied Linear Algebra (5 Credits)
-MATH010A - Multivariable Calculus (4 Credits)
-STAT010 - Introduction to Statistics (5 Credits)
-STAT011 - Introduction to Statistics (5 Credits)
-BIOL2 - Cellular Basis of Life (4 Credits)
-GEO1 - The Earth’s Crust and Interior (5 Credits)
-ENSC1 - Intro to ENSC: Natural Resources (5 Credits)
-THIRD YEAR
-STAT156A - Statistics for Data Science I (4 Credits)
-STAT156B - Statistics for Data Science II (4 Credits)
-STAT167 - Intro to Data Science (4 Credits)
-CS166 - Database Management (4 Credits)
-CS141 - Intermediate Data Structures & Algorithms (4 Credits)
-STAT130 - Sampling Surveys (4 Credits)
-STAT147 - Intro Stat Computing (4 Credits)
- ENGR170 - Technology, Policy, and Ethics (4 Credits)
-HIST10 - World History: Prehistory to 1500  (4 Credits)
-MUS1 - Basic Musical Concepts (4 Credits)
-MUS17 - Popular Music of Mexico (4 Credits)
-FOURTH YEAR
-STAT170A - Regression Analysis (4 Credits)
-STAT170B - Design of Experiments (4 Credits)
-STAT183 - Stat Consulting (4 Credits)
-CS166 - Database Management Systems (4 Credits)
-STAT140 - Nonparametric Techniques (4 Credits)
-CS181 - Principles of Programming Languages (4 Credits)
-ECON 108 - Introductory Econometrics (4 Credits)
-BUS 104 - Decision Analysis and Management Science (4 Credits)
-ENGL001C - Applied Intermediate Composition (4 Credits)
-
-
-Computer Science Requirements
-FIRST YEAR
-CS010A - C++ Programming I (4 Credits)
-CS010B -  C++ Programming II (4 Credits)
-CS010C - Intro to Data Structures & Algorithms (4 Credits)
-ENGR001l - Professional Dev. & Mentoring (4 Credits)
-CS/MATH 011 - Intro to Discrete Structures (4 Credits)
-MATH09A -  First Year Calculus (4 Credits)
-MATH09B -  First Year Calculus (4 Credits)
-MATH09C -  First Year Calculus (4 Credits)
-ENGL001A  -  Beginning Composition (4 Credits)
-ENGL001B - Intermediate Composition (4 Credits)
-SOC1 - Intro to Sociology (4 Credits)
-PSYC1 - Intro to Psychology (4 Credits)
-CHEM1A - General Chemistry (5 Credits)
-SECOND YEAR
-CS100 -  Software Construction (5 Credits)
-CS061 - Machine Org. & Assembly Lang. Prog (4 Credits)
-CS111 - Discrete Structures (4 Credits)
-PHYS040A - Physics (Mechanics) (5 Credits)
-PHYS040B - Physics (Heat/Waves/Sound) (5 Credits)
-PHYS040C - Physics (Electricity/Magnetism) (5 Credits)
-EE120A - Logic Design (5 Credits)
-STAT155 - Probability and Statistics for Science and Engineering (4 Credits)
-HIST10 - World History: Prehistory to 1500  (4 Credits)
-MUS1 - Basic Musical Concepts (4 Credits)
-MUS17 - Popular Music of Mexico (4 Credits)
-ECON 060 - Engineering Economics (4 Credits)
-THIRD YEAR
-CS141 - Intermediate Data Structures & Algorithms (4 Credits)
-CS150 - Theory of Automata & Formal Language (4 Credits)
-CS153 - Design of Operating Systems (4 Credits)
-CS161 -  Design & Architecture of Comp. Sys. & Lab (4 Credits)
-MATH031 -  Applied Linear Algebra (5 Credits)
-MATH010A -  Multivariable Calculus (4 Credits)
-ENGR180W -  Technical Communications (4 Credits)
-ENGR101l - Professional Dev. & Mentoring (1 Credit)
-CS 110 - Web Development (4 Credits)
-CS 130  - Computer Graphics (4 Credits)
-ART10 - Intro to Video (4 Credits)
-FOURTH YEAR
-CS178A - Project Sequence in CSE (4 Credits)
-CS178B - Project Sequence in CSE (4 Credits)
-CS152 -  Compiler Design (4 Credits)
-ENTM20 - Bees and Beekeeping (4 Credits)
-PLPA10 - Microbes & Society (4 Credits)
-CS 131  - Edge Computing (4 Credits)
-CS 172  - Introduction to Information Retrieval (4 Credits)
-CS 120B - Intro to Embedded Systems (4 Credits)
-CS 135  - Virtual Reality  (4 Credits)
-CS 147 - GPU Programming  (4 Credits)
-
+CS010A
+C++ Programming I 
+4
+Lab
+Westin Montano
+Joe Smith
+CS010B
+C++ Programming II 
+4
+Lab
+Jane Doe
+Bob Skillet
+CS010C
+Intro to Data Structures & Algorithms 
+4
+Lab
+Alice Johnson
+Bob Lee
+ENGR001L
+Professional Development & Mentoring 
+4
+None
+Frank Lopez
+N/A
+CS/MATH011
+Intro to Discrete Structures 
+4
+None
+Helen Moore
+N/A
+MATH09A
+First Year Calculus 
+4
+Discussion
+Mark Brown
+Emily Davis
+MATH09B
+First Year Calculus 
+4
+Discussion
+Mark Brown
+Emily Davis
+MATH09C
+First Year Calculus 
+4
+Discussion
+Mark Brown
+Emily Davis
+ENGL001A
+Beginning Composition 
+4
+None
+Sarah White
+N/A
+ENGL001B
+Intermediate Composition 
+4
+None
+Sarah White
+N/A
+SOC1
+Intro to Sociology 
+4
+None
+Tom Carter
+N/A
+PSYC1
+Intro to Psychology 
+4
+Discussion
+Linda Green
+Adam King
+CHEM1A
+General Chemistry 
+5
+Lab
+Paul Martinez
+James Gray
+CS100
+Software Construction 
+5
+Lab
+Michael Roberts
+Susan Taylor
+CS061
+Machine Organization & Assembly Language Programming 
+4
+None
+David Clark
+N/A
+CS111
+Discrete Structures 
+4
+None
+James Carter
+N/A
+PHYS040A
+Physics (Mechanics) 
+5
+Lab
+Anna Gray
+Emily Wilson
+PHYS040B
+Physics (Heat/Waves/Sound) 
+5
+Lab
+Anna Gray
+Emily Wilson
+PHYS040C
+Physics (Electricity/Magnetism) 
+5
+Lab
+Anna Gray
+Emily Wilson
+EE120A
+Logic Design 
+5
+Lab
+Thomas White
+Mark Lewis
+STAT155
+Probability and Statistics for Science and Engineering 
+4
+None
+Jessica Hill
+N/A
+HIST10
+World History: Prehistory to 1500 
+4
+None
+Sophia Martin
+N/A
+MUS1
+Basic Musical Concepts 
+4
+None
+Mike Brown
+N/A
+MUS17
+Popular Music of Mexico 
+4
+None
+Maria Hernandez
+N/A
+ECON060
+Engineering Economics 
+4
+None
+Laura Davis
+N/A
+CS141
+Intermediate Data Structures & Algorithms 
+4
+None
+Alice Johnson
+N/A
+CS150
+Theory of Automata & Formal Languages 
+4
+None
+Brian Cooper
+N/A
+CS153
+Design of Operating Systems 
+4
+None
+John Gray
+N/A
+CS161
+Design & Architecture of Computer Systems 
+4
+Lab
+Thomas White
+Nancy Lopez
+MATH031
+Applied Linear Algebra 
+5
+None
+Laura Bell
+N/A
+MATH010A
+Multivariable Calculus 
+4
+None
+Mark Brown
+N/A
+ENGR180W
+Technical Communications 
+4
+None
+Jennifer Green
+N/A
+ENGR101L
+Professional Development & Mentoring 
+1
+None
+Richard Hall
+N/A
+CS110
+Web Development 
+4
+Lab
+Alice King
+James Wilson
+CS130
+Computer Graphics 
+4
+None
+Karen Smith
+N/A
+ART10
+Intro to Video 
+4
+None
+Sophia Martin
+N/A
+CS178A
+Project Sequence in CSE 
+4
+Lab
+Amanda Gray
+Robert White
+CS178B
+Project Sequence in CSE 
+4
+Lab
+Amanda Gray
+Robert White
+CS152
+Compiler Design 
+4
+None
+Brian Scott
+N/A
+ENTM20
+Bees and Beekeeping 
+4
+None
+Maria Carter
+N/A
+PLPA10
+Microbes & Society 
+4
+None
+Jessica Hill
+N/A
+CS131
+Edge Computing 
+4
+None
+David Miller
+N/A
+CS172
+Introduction to Information Retrieval 
+4
+None
+Alice Johnson
+N/A
+CS120B
+Intro to Embedded Systems 
+4
+Lab
+Mark White
+Emily Wilson
+CS135
+Virtual Reality 
+4
+None
+Karen Adams
+N/A
+CS147
+GPU Programming 
+4
+None
+James King
+N/A
