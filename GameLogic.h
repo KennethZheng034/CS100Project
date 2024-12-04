@@ -1,4 +1,6 @@
-#include "Student.cpp"
+#include "Student.h"
+#include <vector>
+#include <string>
 
 class GameLogic : Student
 {
@@ -12,15 +14,15 @@ class GameLogic : Student
       MajorDatabase;
 
     public:
-        GameLogic;
-        ~GameLogic;
+        GameLogic();
+        ~GameLogic();
         void updateMajor(string); 
         void updateDegreeAudit();
         void updateGPA(double);
         void updateHealth(int);
         void updateSanity(int); 
-        void registerClass(); 
-        void dropClass();
+        void registerClass(string); 
+        void dropClass(string);
         void saveGame(); 
         void loadGame(); 
         void createCharacter();

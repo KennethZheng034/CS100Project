@@ -1,15 +1,17 @@
-GameLogic
+#include "GameLogic.h"
+
+GameLogic::GameLogic()
 {
 
 }
-~GameLogic 
+GameLogic::~GameLogic()
 {
 
 }
 
-void GameLogic::updateMajor(string)
+void GameLogic::updateMajor(string newMajor)
 {
-
+  this->studentMajor = newMajor;
 } 
 
 
@@ -23,7 +25,7 @@ void GameLogic::updateGPA(double GPAInput)
 }
 void GameLogic::updateHealth(int healthInput)
 {
-    this->studentHealth= GPAInput;
+    this->studentHealth = healthInput;
 }
 void GameLogic::updateSanity(int sanityInput)
 {
@@ -32,11 +34,19 @@ void GameLogic::updateSanity(int sanityInput)
 
 void GameLogic::registerClass(string classToAdd)
 {
-    studentSchedule += studentSchedule + ", classToAdd";
+    this->studentSchedule.push_back(classToAdd);
 } 
 void GameLogic::dropClass(string classToDrop)
 {
-
+    for(unsigned int i = 0; i < studentSchedule.size(); i++)
+    {
+        if(studentSchedule.at(i) == classToDrop)
+        {
+            cout << "removed " << classToDrop << "from your schedule" << endl;
+            this->studentSchedule.erase(this->studentSchedule.begin()+i);
+            return;
+        }
+    }
 }
 void GameLogic::saveGame()
 {

@@ -6,8 +6,8 @@ void CharCustomization::printStats()
 {
   cout << "Your current Major is " << this->studentMajor;
   cout << "Your current GPA is" << this->studentGPA; 
-  cout << "Your current Health is" << this->studentHealth;
-  cout << "Your current sanity is " << this->studentSanity;
+  cout << "Your current Health is" << this->studentHealth << "%";
+  cout << "Your current sanity is " << this->studentSanity << "%";
   cout << "Your name is " << this->studentName;
   cout << "Your current year is " << this->studentYear;
 }
@@ -34,11 +34,11 @@ void CharCustomization::printGPA(Student currStudent)
 }
 void CharCustomization::printHealth(Student currStudent)
 {
-  cout << "Your current GPA is " << this->studentGPA;
+  cout << "Your current Health is " << this->studentHealth << "%";
 }
 void CharCustomization::printSanity(Student currStudent)
 {
-  cout << "Your current sanity is " << this->studentSanity;
+  cout << "Your current sanity is " << this->studentSanity << "%";
 }
 void CharCustomization::printName(Student currStudent)
 {
