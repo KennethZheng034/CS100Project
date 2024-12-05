@@ -24,33 +24,41 @@ vector<Course> Course::loadCoursesFromFile(const string& fileName){
         return courseList;
     }
 
-    string line;
-    while (getline(file, line)){
+    string id, title, type, instructor, ta;
+    int credits;
 
-        string id = line;
+    while(getline(file, id)){
+        if(id.empty()) continue;
 
-        string title;
         getline(file, title);
 
-        int credits = 0;
-        file >> credits;
+        string creditsLine;
+        getline(file, creditsLine);
+        credits = stoi(creditsLine);
 
-        string type;
         getline(file, type);
 
-        bool hasLab = (type == "Lab");
-        bool hasDiscussion = (type == "Discussion");
+        size_t start = type.find_first_not_of(" \t\n\r");
+        size_t end = type.find_last_not_of(" \t\n\r");
+        if(start != string::npos && end != string::npos){type = type.substr(start, end - start + 1);}
+        
+        for(char& c : type){c = std::tolower(c);}
 
-        string instructor;
+        bool hasLab = (type == "lab");
+        bool hasDiscussion = (type == "discussion");
+
         getline(file, instructor);
-
-        string ta;
         getline(file, ta);
+        string line;
+        bool breadth = false;
+        if(getline(file, line)){
+        line.erase(line.find_last_not_of(" \t\n\r") + 1);
+        if (line == "Breadth"){breadth = true;}
 
-        Course course(id, title, {}, hasLab, hasDiscussion, false, credits, instructor, ta);
+        Course course(id, title, {}, hasLab, hasDiscussion, breadth, credits, instructor, ta);
         courseList.push_back(course);
+        }
     }
-
     file.close();
-    return courseList;
+    return courseList; 
 }

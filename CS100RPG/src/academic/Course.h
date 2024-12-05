@@ -2,8 +2,8 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include <sstream>
 #include <iostream>
+#include <cctype>
 
 using namespace std;
 
