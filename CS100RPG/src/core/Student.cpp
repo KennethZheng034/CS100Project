@@ -13,10 +13,9 @@ Student::Student()
     this->studentSchedule = {""};
 }
 
-Student::~Student()
-{
-
-}
+// Student::~Student()
+// {
+// }
 
 // paramerterized constructor
 Student::Student(const string &Major, const string &Name, double GPA, int Health, int studentSanity)
@@ -88,6 +87,30 @@ string Student::fetchPersonality()
 string Student::fetchMajor()
 {
     return this->studentMajor;
+}
+void Student::setHealth()
+{
+  int healthStart;
+  cout << "Please set the health you want to start with" << endl;
+  cin >> healthStart;
+  while(healthStart <=0 || healthStart > 100)
+  {
+    cout << "Invalid health, please try again" << endl;
+  }
+  cout << "Your health is now " << healthStart << endl;
+
+}
+
+void Student::setSanity()
+{
+  int sanityStart;
+  cout << "Please set the sanity you want to start with" << endl;
+  cin >> sanityStart;
+  while(sanityStart <=0 || sanityStart > 100)
+  {
+    cout << "Invalid sanity, please try again" << endl;
+  }
+  cout << "Your sanity is now " << sanityStart << endl;
 }
 
 void Student::setGender()

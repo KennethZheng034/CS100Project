@@ -1,0 +1,3 @@
+[submodule "CS100RPG/googletest"]
+	path = CS100RPG/googletest
+	url = https://github.com/google/googletest.git

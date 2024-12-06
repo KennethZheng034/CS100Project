@@ -1,4 +1,5 @@
-#pragma once
+#ifndef STUDENT_H
+#define STUDENT_H
 
 #include <iostream>
 #include <vector>
@@ -18,6 +19,13 @@ class Student
         int studentSanity;
         int studentYear;
         vector<string> studentSchedule;
+// protected:
+//     string studentMajor = "";
+//     string studentName = "";
+//     double studentGPA = 0;
+//     int studentHealth = 100;
+//     int studentSanity = 100;
+//     vector<string> studentSchedule;
 
     public:
         Student();
@@ -38,6 +46,8 @@ class Student
         void decreaseHealth(int);
         void decreaseGPA(double);
         void decreaseSanity(int);
+        void setHealth();
+        void setSanity();
         void setName();
         void setGender();
         void setYear();
@@ -52,3 +62,5 @@ class Student
         void registerClass(string); 
         void dropClass(string);
 };
+
+#endif

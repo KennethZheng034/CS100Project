@@ -39,7 +39,7 @@ void GameLogic::saveGame(Student currStudent)
     saveFile << currStudent.fetchMajor() << endl;
     saveFile << currStudent.fetchYear() << endl;
     saveFile.close();
-    cout << "Game saved successfully, you may now exit safely" << endl;
+    cout << "Game saved successfully, you may now exit safely" << endl; 
 } 
 // void GameLogic::loadGame(Student loadStudent)
 // {
