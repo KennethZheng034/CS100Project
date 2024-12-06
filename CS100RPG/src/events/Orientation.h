@@ -21,4 +21,5 @@ class Orientation : public Student{
         bool isHousingValid(int, int);
         void askQuestions();
         void presentHousingOptions();
+        void updateHousing(const string&);
 };

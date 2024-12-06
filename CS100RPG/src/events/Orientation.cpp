@@ -34,29 +34,28 @@ if (year >= 2 && choice <= 4) {
 return true;
 }
 
-void Orientation::presentHousingOptions(){
-    cout << "--------------------------------------------------------------------" << endl;
-    cout << "Welcome To The Housing Portal! Please Answer The Following Questions" << endl; 
-    cout << "--------------------------------------------------------------------" << endl;
-    cout << "Which Residence Hall Would You Like To Choose?\n" << endl;
-    for(int i = 0; i < housingOptions.size(); i++){
-        cout << i+1 << "." << housingOptions[i] << endl;
-    }
-    cout << endl;
-    cout << "Select A Residence Hall Via Its Respective Number: ";
-    
-    // int year = fetchYear();
-    //int year = 100;
-    cin >> housingChoice;
-    cout << endl;
-    /*do{
-        if(cin.fail()){
-            cin.clear();
-            cin.ignore();
-            cout << "Invalid input, please try again." << endl;
-            continue;
+    void Orientation::presentHousingOptions(){
+        cout << "Welcome To The Housing Portal! Please Answer The Following Questions" << endl; 
+        cout << "--------------------------------------" << endl;
+        cout << "Which Residence Hall Would You Like To Choose?\n" << endl;
+        for(int i = 0; i < housingOptions.size(); i++){
+            cout << i+1 << "." << housingOptions[i] << endl;
         }
-    } while(!isHousingValid(housingChoice, year));
-    updateHousing(housingOptions[housingChoice - 1]);*/
-    cout << "Housing Successfully Selected! Welcome to " << housingOptions[housingChoice-1] <<  "! You're gonna love it here!" << endl;
-}
+        cout << "--------------------------------------" << endl;
+        cout << "Select A Residence Hall Via Its Respective Number:" << endl;
+        
+        int year = fetchYear();
+        cin >> housingChoice;
+        while (!isHousingValid(housingChoice, year)) {
+        cin.clear();
+        cin.ignore();
+        cout << "Invalid input, please try again." << endl;
+        cin >> housingChoice;
+        }
+        updateHousing(housingOptions[housingChoice - 1]);
+    }
+
+    void Orientation::updateHousing(const string& housing){
+        setHousing(housing);
+        cout << "Housing Successfully Selected! Welcome to " << housing <<  "! You're gonna love it here!";
+    }
