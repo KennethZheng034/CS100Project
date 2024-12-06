@@ -31,6 +31,7 @@ int main() {
     cout << "[**Let's Start the game!**]" << endl;
     cout << "------------------------------------------------" << endl;
 
+    cout << "";
     // Gamelogic game;
     // game.displayChoices();
     // cout << endl;
