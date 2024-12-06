@@ -17,9 +17,11 @@ class Orientation : public Student{
     int housingChoice = 0;
     string userResponse = "";
     vector <string> responses;
+    string currHousing;
     public:
         bool isHousingValid(int, int);
         void askQuestions();
         void presentHousingOptions();
         void updateHousing(const string&);
+        void setHousing(const string&);
 };

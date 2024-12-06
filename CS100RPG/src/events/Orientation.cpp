@@ -18,7 +18,8 @@ void Orientation::askQuestions(){
     }
 }
 
-bool Orientation::isHousingValid(int choice, int year) {
+bool Orientation::isHousingValid(int choice, int year) 
+{
 if (choice < 1 || choice > housingOptions.size()) {
     cout << "Please input a valid number between 1 and " << housingOptions.size() << "." << endl;
     return false;
@@ -46,16 +47,19 @@ return true;
         
         int year = fetchYear();
         cin >> housingChoice;
-        while (!isHousingValid(housingChoice, year)) {
-        cin.clear();
-        cin.ignore();
-        cout << "Invalid input, please try again." << endl;
-        cin >> housingChoice;
+        while (!isHousingValid(housingChoice, year)) 
+        {
+            cin.clear();
+            cin.ignore();
+            cout << "Invalid input, please try again." << endl;
+            cin >> housingChoice;
         }
         updateHousing(housingOptions[housingChoice - 1]);
     }
 
-    void Orientation::updateHousing(const string& housing){
-        setHousing(housing);
+    void Orientation::updateHousing(const string& housing)
+    {
+        currHousing = housing;
         cout << "Housing Successfully Selected! Welcome to " << housing <<  "! You're gonna love it here!";
     }
+
