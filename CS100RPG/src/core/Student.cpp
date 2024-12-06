@@ -5,16 +5,16 @@ using namespace std;
 // constructor
 Student::Student()
 {
-    string studentMajor = "";
-    string studentName = "";
-    double studentGPA = 0.0;
-    int studentHealth = 100;
-    int studentSanity = 100;
+    // string studentMajor = "";
+    // string studentName = "";
+    // double studentGPA = 0.0;
+    // int studentHealth = 100;
+    // int studentSanity = 100;
 }
 
-Student::~Student()
-{
-}
+// Student::~Student()
+// {
+// }
 
 // paramerterized constructor
 Student::Student(const string &Major, const string &Name, double GPA, int Health, int studentSanity)
@@ -23,7 +23,7 @@ Student::Student(const string &Major, const string &Name, double GPA, int Health
     this->studentName = Name;
     this->studentGPA = GPA;
     this->studentHealth = Health;
-    this->studentSanity = 0;
+    this->studentSanity = studentSanity;
 }
 
 void Student::setHealth(int health){
@@ -97,3 +97,4 @@ void Student::decreaseSantiy(int amount)
 {
     this->studentSanity -= amount;
 }
+
