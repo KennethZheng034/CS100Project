@@ -21,5 +21,5 @@ class Orientation : public Student{
     public:
         void askQuestions();
         void presentHousingOptions();
-        void updateHousing(string&);
+        void updateHousing(const string&);
 };

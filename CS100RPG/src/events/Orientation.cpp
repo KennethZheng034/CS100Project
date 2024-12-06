@@ -36,27 +36,24 @@
         cout << "Welcome To The Housing Portal! Please Answer The Following Questions" << endl; 
         cout << "--------------------------------------" << endl;
         cout << "Which Residence Hall Would You Like To Choose?\n" << endl;
-        for(int i = 0; i < orientationQuestions.size(); i++){
-            cout << i+1 << "." << orientationQuestions[i] << endl;
+        for(int i = 0; i < housingOptions.size(); i++){
+            cout << i+1 << "." << housingOptions[i] << endl;
         }
         cout << "--------------------------------------" << endl;
         cout << "Select A Residence Hall Via Its Respective Number:" << endl;
         
         int year = fetchYear();
         cin >> housingChoice;
-        do{
-            if(cin.fail()){
-                cin.clear();
-                cin.ignore();
-                cout << "Invalid input, please try again." << endl;
-                continue;
-            }
-        while(!isHousingValid(housingChoice, year));
+        while (!isHousingValid(housingChoice, year)) {
+        cin.clear();
+        cin.ignore();
+        cout << "Invalid input, please try again." << endl;
+        cin >> housingChoice;
         }
         updateHousing(housingOptions[housingChoice - 1]);
     }
 
-    void Orientation::updateHousing(string&){
-        setHousing(this);
-        cout << "Housing Successfully Selected! Welcome to " << this <<  "! You're gonna love it here!"
+    void Orientation::updateHousing(const string& housing){
+        setHousing(housing);
+        cout << "Housing Successfully Selected! Welcome to " << housing <<  "! You're gonna love it here!";
     }
