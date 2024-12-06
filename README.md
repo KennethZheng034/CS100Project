@@ -72,17 +72,18 @@ We did not make any major changes in terms of applying S.O.L.I.D principles beca
 * Interface Segregation Principle (ISP) : ISP states that a client should never be forced to implement/use interfaces/methods that it doesn't need. We made sure in our diagram that each class doesn't contain any functions that it won't need to use. For example, the registration class handles only the things related to a student registering such as add/removing/recommending courses and doesn't include any functions or variables that are not applicable to registration.
  
  > ## Final deliverable
- > All group members will give a demo to the reader during lab time. ou should schedule your demo on Calendly with the same reader who took your second scrum meeting. The reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
  > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history.
->  * Each team member should also submit the Individual Contributions Form on Canvas for this final phase. In this form, you need to fill in the names of all team members, the percentage of work contributed by each member for the final phase, and a description of their contributions. Remember that each team member should submit the form individually.
+
+
  
  ## Screenshots
  > Screenshots of the input/output after running your application
+![MainMenuScreenshot](https://github.com/user-attachments/assets/16351f5e-5ecb-4206-bec7-5a885c7b7aa7)
+![CharacterCustomizationScreenshot](https://github.com/user-attachments/assets/c2c6b2f2-5d5e-4ecd-86b0-4037e8cc0784)
+![HousingScreenshot](https://github.com/user-attachments/assets/b3401b79-5892-4315-8d81-63f37ef9052a)
+![OrientationScreenshot](https://github.com/user-attachments/assets/d0913fa4-025c-4300-8192-18e12a303f61)
  ## Installation/Usage
- > Instructions on installing and running your application
+ > Our program runs fully in the terminal. There is no installation to go through other than having a code environment set up. 
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
