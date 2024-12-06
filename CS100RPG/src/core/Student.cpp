@@ -15,6 +15,7 @@ Student::Student()
 
 Student::~Student()
 {
+
 }
 
 // paramerterized constructor
@@ -55,6 +56,10 @@ void Student::decreaseGPA(double amount)
 void Student::decreaseSanity(int amount)
 {
     this->studentSanity -= amount;
+}
+string Student::fetchName()
+{
+  return this->studentName;
 }
 int Student::fetchYear()
 {
@@ -165,6 +170,19 @@ void Student::setMajor()
 {
   cout << "Your major is ____"; //WIP because class database is still being developed
 }
+
+void Student::setName()
+{
+  string nameInput;
+  cout << "Please enter in your name" << endl;
+  cin >> nameInput;
+  while(cin.fail())
+  {
+    cout << "Invalid name, please choose another name" << endl;
+    cin >> nameInput;
+  }
+  cout << "Your name set as " << nameInput;
+}
 void Student::setGPA()
 {
   double GPAInput;
@@ -191,10 +209,9 @@ void Student::updateMajor(string newMajor)
   this->studentMajor = newMajor;
 } 
 
-
 void Student::updateDegreeAudit()
 {
-
+  //leave to haokun.
 }
 void Student::updateGPA(double GPAInput)
 {

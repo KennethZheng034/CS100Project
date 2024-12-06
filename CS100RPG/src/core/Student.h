@@ -24,6 +24,7 @@ class Student
         ~Student();
         Student(const string &, const string &, double, int, int);
         const string &fetchProgress();
+        string fetchName();
         string fetchGender();
         string fetchPersonality();
         string fetchMajor();
@@ -37,6 +38,7 @@ class Student
         void decreaseHealth(int);
         void decreaseGPA(double);
         void decreaseSanity(int);
+        void setName();
         void setGender();
         void setYear();
         void setMajor();
