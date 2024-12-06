@@ -1,36 +1,38 @@
 #include "Orientation.h"
 
-    void Orientation::askQuestions(){
-        cout << "Welcome To Orientation! Please Answer The Following Questions" << endl; 
-        cout << "--------------------------------------" << endl;
-        for (int i = 0; i < orientationQuestions.size(); i++){
-            cout << i+1 << ". " << orientationQuestions[i] << endl;
-            getline(cin, userResponse);
-            while(cin.fail()){
-            cin.clear();
-            cin.ignore();
-            cout << "There was an error processing input! Please try again." << endl;
-            getline(cin, userResponse);
-            }
-        responses.push_back(userResponse);
+void Orientation::askQuestions(){
+    cout << "-------------------------------------------------------------" << endl;
+    cout << "Welcome To Orientation! Please Answer The Following Questions" << endl; 
+    cout << "-------------------------------------------------------------" << endl;
+    for (int i = 0; i < orientationQuestions.size(); i++){
+        cout << i+1 << ". " << orientationQuestions[i] << endl;
+        cin.ignore();
+        getline(cin, userResponse);
+        while(cin.fail()){
+        cin.clear();
+        cin.ignore();
+        cout << "There was an error processing input! Please try again." << endl;
+        getline(cin, userResponse);
         }
+    responses.push_back(userResponse);
     }
+}
 
-    bool Orientation::isHousingValid(int choice, int year) {
-    if (choice < 1 || choice > housingOptions.size()) {
-        cout << "Please input a valid number between 1 and " << housingOptions.size() << "." << endl;
-        return false;
-    }
-    if (year < 2 && (choice == 5 || choice == 6)) {
-        cout << "This housing is only available for 2nd years and above, please make another selection." << endl;
-        return false;
-    }
-    if (year >= 2 && choice <= 4) {
-        cout << "This housing is only available for 1st years, please make another selection." << endl;
-        return false;
-    }
-    return true;
-    }
+bool Orientation::isHousingValid(int choice, int year) {
+if (choice < 1 || choice > housingOptions.size()) {
+    cout << "Please input a valid number between 1 and " << housingOptions.size() << "." << endl;
+    return false;
+}
+if (year < 2 && (choice == 5 || choice == 6)) {
+    cout << "This housing is only available for 2nd years and above, please make another selection." << endl;
+    return false;
+}
+if (year >= 2 && choice <= 4) {
+    cout << "This housing is only available for 1st years, please make another selection." << endl;
+    return false;
+}
+return true;
+}
 
     void Orientation::presentHousingOptions(){
         cout << "Welcome To The Housing Portal! Please Answer The Following Questions" << endl; 
