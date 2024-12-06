@@ -102,5 +102,5 @@ TEST(ORIENTATION, isHousingValid) {
 
     EXPECT_EQ(result, true);
 }
-
+//.
 #endif

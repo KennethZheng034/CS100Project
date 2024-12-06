@@ -34,7 +34,7 @@ TEST(STUDENT, setMajor) {
     EXPECT_EQ(student.getHealth(), 50);
     EXPECT_EQ(student.getSanity(), 50);
 }
-
+//.
 TEST(STUDENT, setName) {
     Student student("Computer Science", "John Smith", 4.0, 50, 50);
     student.setName("Ada Lovelace");
