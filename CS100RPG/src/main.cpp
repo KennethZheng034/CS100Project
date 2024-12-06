@@ -1,4 +1,4 @@
-#include "Display.h"
+#include "display/Display.h"
 #include <iostream> 
 
 using namespace std;
@@ -8,7 +8,8 @@ int main() {
     gameDisplay.mainMenu();
 
     int userInput;
-    cin >> userInput; 
+    cin >> userInput;
+    cout << endl; 
 
     if (userInput == 1){
         gameDisplay.characterCustomization();

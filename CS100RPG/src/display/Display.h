@@ -5,6 +5,7 @@ class Display{
     public: 
     void mainMenu();
     void characterCustomization();
+    void characterInfo();
 };
 
 #endif
