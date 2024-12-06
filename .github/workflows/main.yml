@@ -15,26 +15,18 @@ jobs:
     - name: Update and create submodules
       run: git submodule update --init --recursive
 
-    - name: RunTests
+    - name: Build the game
       run: |
         cd CS100RPG
         cmake .
         make
+
+    - name: Run tests
+      run: |
+        cd CS100RPG
         ./tests
 
-    - name: RunGame
+    - name: Run the game with simulated input
       run: |
         cd CS100RPG
-        cmake .
-        make
-        ./runGame
-        1
-        TestUser
-        Computer Science
-        4.0
-        Test Input 1
-        Test Input 2
-        Test Input 3
-        Test Input 4
-        Test Input 5
-        2
+        echo -e "1\nTestUser\nComputer Science\n4.0\nTest Input 1\nTest Input 2\nTest Input 3\nTest Input 4\nTest Input 5\n2" | ./runGame
