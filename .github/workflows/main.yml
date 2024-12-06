@@ -1,0 +1,23 @@
+name: Life@UCR
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v2
+
+    - name: Update and create submodules
+      run: git submodule update --init --recursive
+
+    - name: Run a multi-line script
+      run: |
+        cd tests
+        cmake .
+        make
+        ./runGame
