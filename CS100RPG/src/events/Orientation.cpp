@@ -59,4 +59,4 @@ void Orientation::presentHousingOptions(){
     } while(!isHousingValid(housingChoice, year));
     updateHousing(housingOptions[housingChoice - 1]);*/
     cout << "Housing Successfully Selected! Welcome to " << housingOptions[housingChoice] <<  "! You're gonna love it here!" << endl;
-}
+}// commit
