@@ -24,4 +24,7 @@ jobs:
 
     - name: RunGame
       run: |
+        cd CS100RPG
+        cmake .
+        make
         ./runGame
