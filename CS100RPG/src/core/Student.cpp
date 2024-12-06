@@ -186,3 +186,42 @@ void Student::setGPA()
     cin >> GPAInput;
   }
 }
+void Student::updateMajor(string newMajor)
+{
+  this->studentMajor = newMajor;
+} 
+
+
+void Student::updateDegreeAudit()
+{
+
+}
+void Student::updateGPA(double GPAInput)
+{
+    this->studentGPA = GPAInput;
+}
+void Student::updateHealth(int healthInput)
+{
+    this->studentHealth = healthInput;
+}
+void Student::updateSanity(int sanityInput)
+{
+    this->studentSanity = sanityInput;
+} 
+
+void Student::registerClass(string classToAdd)
+{
+    this->studentSchedule.push_back(classToAdd);
+} 
+void Student::dropClass(string classToDrop)
+{
+    for(unsigned int i = 0; i < studentSchedule.size(); i++)
+    {
+        if(studentSchedule.at(i) == classToDrop)
+        {
+            cout << "removed " << classToDrop << "from your schedule" << endl;
+            this->studentSchedule.erase(this->studentSchedule.begin()+i);
+            return;
+        }
+    }
+}

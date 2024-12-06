@@ -42,4 +42,11 @@ class Student
         void setMajor();
         void setGPA();
         void setPersonality();
+        void updateMajor(string); 
+        void updateDegreeAudit();
+        void updateGPA(double);
+        void updateHealth(int);
+        void updateSanity(int); 
+        void registerClass(string); 
+        void dropClass(string);
 };
