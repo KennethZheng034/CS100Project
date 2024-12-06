@@ -91,4 +91,3 @@ void GameLogic::resetGame()
 //make a storyboard
 //After registration, what do they do, what are their options.
 //have student class, orientation done,
-

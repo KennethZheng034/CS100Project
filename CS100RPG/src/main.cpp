@@ -4,8 +4,8 @@
 #include <iostream> 
 
 using namespace std;
-
 int main() {
+
     Display gameDisplay;
     gameDisplay.mainMenu();
 
@@ -22,7 +22,6 @@ int main() {
     
     cout << endl; 
     cout << "Congratulations you finished Orientation!" << endl; 
-
     cout << endl;
     gameOrientation.presentHousingOptions();
     cout << endl;
@@ -30,15 +29,9 @@ int main() {
     cout << "------------------------------------------------" << endl;
     cout << "[**Let's Start the game!**]" << endl;
     cout << "------------------------------------------------" << endl;
-
     // Gamelogic game;
     // game.displayChoices();
     // cout << endl;
     // cout << "What choice do you want to make? "; 
-
-    
-    
-    
-
 
 }

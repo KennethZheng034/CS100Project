@@ -1,7 +1,8 @@
 academic_rpg
-valgrind
-runGame
-Makefile
 CMakeCache.txt
+CMakeFiles/
 cmake_install.cmake
-CMakeFiles
+runGame
+valgrind
+Makefile
+tests

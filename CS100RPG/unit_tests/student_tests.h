@@ -96,7 +96,7 @@ TEST(STUDENT, increaseHealth) {
 
     EXPECT_EQ(student.getMajor(), "Computer Science");
     EXPECT_EQ(student.getName(), "John Smith");
-    EXPECT_EQ(student.getGPA(), 4);
+    EXPECT_EQ(student.getGPA(), 4.0);
     EXPECT_EQ(student.getHealth(), 25);
     EXPECT_EQ(student.getSanity(), 50);
 }
@@ -107,7 +107,7 @@ TEST(STUDENT, increaseSanity) {
 
     EXPECT_EQ(student.getMajor(), "Computer Science");
     EXPECT_EQ(student.getName(), "John Smith");
-    EXPECT_EQ(student.getGPA(), 4);
+    EXPECT_EQ(student.getGPA(), 4.0);
     EXPECT_EQ(student.getHealth(), 50);
     EXPECT_EQ(student.getSanity(), 25);
 }
