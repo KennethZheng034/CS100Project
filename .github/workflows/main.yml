@@ -15,9 +15,13 @@ jobs:
     - name: Update and create submodules
       run: git submodule update --init --recursive
 
-    - name: Run a multi-line script
+    - name: RunTests
       run: |
-        cd tests
+        cd CS100RPG
         cmake .
         make
+        ./tests
+
+    - name: RunGame
+      run: |
         ./runGame
