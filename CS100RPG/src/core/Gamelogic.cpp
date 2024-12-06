@@ -6,13 +6,22 @@ using namespace std;
 
 GameLogic::GameLogic()
 {
-
+    saveFile.open("newSave");
+    if(!saveFile.is_open())
+    {
+        cout << "Failed to open the save file" << endl;
+    }
+    cout << "Successfully opened save file" << endl;
 }
 GameLogic::~GameLogic()
 {
-
+  if(saveFile.is_open())
+    {
+        saveFile.close();
+        cout << "Successfully closed save file" << endl;
+    }
 }
-void GameLogic::saveGame(Student currStudent, const string& newSave)
+void GameLogic::saveGame(Student currStudent)
 {
     ofstream saveFile("newSave");
     if(!saveFile.is_open())
@@ -68,7 +77,15 @@ void GameLogic::createCharacter(string major, string name, double gpa, int healt
 }
 void GameLogic::resetGame()
 {
-
+    ofstream saveFile("newSave");
+    if(!saveFile.is_open())
+    {
+        cout << "Failed to open file" << endl;
+        return;
+    }
+    saveFile << " ";
+    cout << "Game reset successfully." << endl;
+    saveFile.close();
 }
 
 //make a storyboard
