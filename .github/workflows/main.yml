@@ -28,3 +28,13 @@ jobs:
         cmake .
         make
         ./runGame
+        1
+        TestUser
+        Computer Science
+        4.0
+        Test Input 1
+        Test Input 2
+        Test Input 3
+        Test Input 4
+        Test Input 5
+        2
