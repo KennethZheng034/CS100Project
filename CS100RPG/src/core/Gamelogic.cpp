@@ -1,4 +1,4 @@
-#include "GameLogic.h"
+#include "Gamelogic.h"
 
 GameLogic::GameLogic()
 {
