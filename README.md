@@ -72,9 +72,6 @@ We did not make any major changes in terms of applying S.O.L.I.D principles beca
 * Interface Segregation Principle (ISP) : ISP states that a client should never be forced to implement/use interfaces/methods that it doesn't need. We made sure in our diagram that each class doesn't contain any functions that it won't need to use. For example, the registration class handles only the things related to a student registering such as add/removing/recommending courses and doesn't include any functions or variables that are not applicable to registration.
  
  > ## Final deliverable
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
-
-
  
  ## Screenshots
  > Screenshots of the input/output after running your application
