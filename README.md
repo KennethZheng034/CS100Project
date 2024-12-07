@@ -85,5 +85,11 @@ We did not make any major changes in terms of applying S.O.L.I.D principles beca
  ## Installation/Usage
  > Our program runs fully in the terminal. There is no installation to go through other than having a code environment set up. 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ > Our progam was tested via Continuous Integration.
+ > Within the CI's yaml file, we: 
+    * Updated the google test submodule. 
+    * Built our game via "cmake ." and "make". 
+    * Ran the "Run tests" job, which ran our tests executable.
+    * Lastly, we ran "Run the game with simulated input" and did just that.
+ > At the very top of our repository, there is a little green checkmark that demonstrates that our program runs with no errors!
  
